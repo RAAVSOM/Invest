@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emprendedor</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+<body>
+  <main>
+    <header class="header-flex">
+      <div class="header-izquierda">
+        <h1>Emprendedor</h1>
+        <div class="busqueda-container">
+          <input type="text" id="busqueda" placeholder="Buscar...">
+          <button type="button" class="btn-buscar">Buscar</button>
+        </div>
+      </div>
+      <div class="header-derecha">
+        <div class="usuario-info">
+          <span class="nombre-usuario">Nombre Usuario</span>
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="seccion-principal">
+      <div class="seccion-informacion-agregar-negocio">
+        <div class="negocios-contenedor">
+          <div class="negocio">
+            <div class="negocio-imagen">
+              <img src="https://placehold.co/" alt="Imagen de Negocio">
+            </div>
+            <div class="negocio-info">
+              <h2>Titulo Negocio</h2>
+              <p>Descripcion del negocio</p>
+              <p>Precio: $100.000</p>
+              <span class="estado">Aprobado</span>
+            </div>
+          </div>
+          <div class="negocio">
+            <div class="negocio-imagen">
+              <img src="https://placehold.co/" alt="Imagen de Negocio">
+            </div>
+            <div class="negocio-info">
+              <h2>Titulo Negocio</h2>
+              <p>Descripcion del negocio</p>
+              <p>Precio: $200.000</p>
+              <span class="estado">Aprobado</span>
+            </div>
+          </div>
+          <div class="negocio">
+            <div class="negocio-imagen">
+              <img src="https://placehold.co/" alt="Imagen de Negocio">
+            </div>
+            <div class="negocio-info">
+              <h2>Titulo Negocio</h2>
+              <p>Descripcion del negocio</p>
+              <p>Precio: $300.000</p>
+              <span class="estado">Aprobado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="agregar-negocio">
+          <h2>Agregar Negocio</h2>
+          <form action="#">
+            <div class="campo-formulario">
+              <label for="nombreNegocio">Nombre Negocio:</label>
+              <input type="text" id="nombreNegocio" name="nombreNegocio" required="">
+            </div>
+            <div class="campo-formulario">
+              <label for="descripcionNegocio">Descripcion Negocio:</label>
+              <textarea id="descripcionNegocio" name="descripcionNegocio" rows="5" required=""></textarea>
+            </div>
+            <div class="campo-formulario">
+              <label for="tipoNegocio">Tipo de Negocio:</label>
+              <select id="tipoNegocio" name="tipoNegocio" required="">
+                <option value="">Seleccionar...</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="tienda">Tienda</option>
+                <option value="servicio">Servicio</option>
+              </select>
+            </div>
+            <div class="campo-formulario">
+              <label for="localizacionNegocio">Localizacion:</label>
+              <select id="localizacionNegocio" name="localizacionNegocio" required="">
+                <option value="">Seleccionar...</option>
+                <option value="zona_norte">Zona Norte</option>
+                <option value="zona_centro">Zona Sur</option>
+                <option value="zona_sur">Zona Oeste</option>
+              </select>
+            </div>
+            <div class="campo-formulario">
+              <label for="archivosNegocio">Archivos de Negocio:</label>
+              <input type="file" id="archivosNegocio" name="archivosNegocio" multiple="">
+            </div>
+            <button type="submit" class="btn-solicitar">Solicitar Permiso</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body></html>
